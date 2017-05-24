@@ -1,0 +1,21 @@
+http_proxy=http://192.168.6.4:3128/
+https_proxy=$http_proxy
+HTTP_PROXY=$http_proxy
+HTTPS_PROXY=$http_proxy
+
+no_proxy=localhost,127.0.0.1
+NO_PROXY=$no_proxy
+VAGRANT_NO_PROXY=$no_proxy
+
+export http_proxy https_proxy HTTP_PROXY HTTPS_PROXY no_proxy NO_PROXY
+
+VAGRANT_HTTP_PROXY=$http_proxy
+VAGRANT_HTTPS_PROXY=$http_proxy
+VAGRANT_APT_HTTP_PROXY=$http_proxy
+VAGRANT_APT_HTTPS_PROXY=$http_proxy
+VAGRANT_FTP_PROXY=$http_proxy
+VAGRANT_NO_PROXY=$no_proxy
+
+export VAGRANT_HTTP_PROXY VAGRANT_HTTPS_PROXY VAGRANT_APT_HTTP_PROXY VAGRANT_APT_HTTPS_PROXY VAGRANT_NO_PROXY
+
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
